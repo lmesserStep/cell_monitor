@@ -164,7 +164,7 @@ Each successful measurement prints a JSON object on stdout:
 {"t_ms":1716900000123,"band":48,"earfcn":55240,"freq_mhz":3560.00,"pci":1,"n_prb":100,"ports":2,"rsrp_dbm":-85.3,"rsrq_db":-10.1,"snr_db":18.4,"cfo_hz":142.7,"frame_type":"TDD"}
 ```
 
-Measurement failures emit an `"error":"measure_failed"` key instead of signal metrics.
+Measurement failures emit an `"error":"measure_failed"` key instead of signal metrics. This can be because of dropped samples or a bad signal. 
 
 ---
 
